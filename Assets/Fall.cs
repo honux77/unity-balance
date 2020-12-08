@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Fall : MonoBehaviour
 {
+    bool end = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,8 +17,13 @@ public class Fall : MonoBehaviour
         
     }
 
-    public void nCollisionEnter(Collision collision)
-    {
+    public void OnCollisionEnter(Collision collision)
+    {        
         Debug.Log("충돌 감지");
+        if (!end) {
+            end = true;
+            Canvas canvas = GameObject.Find("GameOverCanvas").GetComponent<Canvas>();
+            canvas.GetComponent<Canvas> ().enabled = true;
+        }
     }
 }
