@@ -2,7 +2,7 @@
 
 ## DEMO
 
-<https://play.unity.com/mg/other/simple-ball-0-1>
+<https://play.unity.com/mg/other/simple-ball-0-2>
 
 ## 초간단 유니티 프로젝트 01
 

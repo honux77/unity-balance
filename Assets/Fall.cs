@@ -18,8 +18,7 @@ public class Fall : MonoBehaviour
     }
 
     public void OnCollisionEnter(Collision collision)
-    {        
-        Debug.Log("충돌 감지");
+    {   
         if (!end) {
             end = true;
             Canvas canvas = GameObject.Find("GameOverCanvas").GetComponent<Canvas>();
